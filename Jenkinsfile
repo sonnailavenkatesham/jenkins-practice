@@ -1,10 +1,13 @@
 pipeline {
-    agent any
+    agent {node { label 'agent'}}
 
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                sh '''
+                ls -l
+                pwd
+                '''
             }
         }
         stage('Test') {
