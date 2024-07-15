@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage('terraform init'){
             steps{
-                echo "Testing on Webhooks"
+                echo "Testing on Webhook"
                 sh '''
                 ls -l
                 pwd
